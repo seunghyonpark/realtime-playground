@@ -1,8 +1,17 @@
 "use client";
 
-import Logo from "@/assets/lk.svg";
+//import Logo from "@/assets/lk.svg";
+import Heart from "@/assets/heart.svg";
 
 export default function LK() {
+
+
+  return (
+    <Heart />
+  )
+
+
+  /*
   return (
     <a
       href="https://livekit.io"
@@ -13,4 +22,8 @@ export default function LK() {
       <Logo width="76" />
     </a>
   );
+  */
+
+
+
 }

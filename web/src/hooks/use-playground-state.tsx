@@ -173,13 +173,54 @@ export const PlaygroundStateProvider = ({
   const [showAuthDialog, setShowAuthDialog] = useState(false);
 
   useEffect(() => {
-    const storedKey = localStorage.getItem(LS_OPENAI_API_KEY_NAME);
+    
+    
+    //const storedKey = localStorage.getItem(LS_OPENAI_API_KEY_NAME);
+    /*
     if (storedKey && storedKey.length >= 1) {
       dispatch({ type: "SET_API_KEY", payload: storedKey });
     } else {
       dispatch({ type: "SET_API_KEY", payload: null });
       setShowAuthDialog(true);
     }
+    */
+
+
+
+
+    let storedKey = "";
+
+
+    const fetchOpenAIKey = async () => {
+      const response = await fetch("/api/openai-key", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      const json = await response?.json();
+
+      storedKey = json.openaiAPIKey;
+
+      if (storedKey && storedKey.length >= 1) {
+        dispatch({ type: "SET_API_KEY", payload: storedKey });
+      } else {
+        dispatch({ type: "SET_API_KEY", payload: null });
+        setShowAuthDialog(true);
+      }
+    };
+
+    fetchOpenAIKey();
+
+
+ 
+
+
+
+
+
+
 
     // Load presets from localStorage
     const storedPresets = localStorage.getItem(LS_USER_PRESETS_KEY);

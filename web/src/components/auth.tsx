@@ -33,6 +33,7 @@ const AuthFormSchema = z.object({
   openaiAPIKey: z.string().min(1, { message: "API key is required" }),
 });
 
+
 export function Auth() {
   const { pgState, dispatch, showAuthDialog, setShowAuthDialog } =
     usePlaygroundState();
@@ -96,6 +97,7 @@ export function AuthDialog({
     onOpenChange(false);
     onAuthComplete();
   }
+
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
