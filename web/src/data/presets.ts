@@ -46,7 +46,7 @@ export const defaultPresets: Preset[] = [
   */
   // 한글로 변경
   {
-    id: "도움이 되는 AI",
+    id: "helpful-ai",
     name: "도움이 되는 AI",
     description:
       "ChatGPT 고급 음성 모드와 유사한 플랫폼 기본값을 사용하는 도움이 되고 기발한 AI.",
