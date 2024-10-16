@@ -1,14 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { InstructionsEditor } from "@/components/instructions-editor";
+
+//import { InstructionsEditor } from "@/components/instructions-editor";
+
 import { usePlaygroundState } from "@/hooks/use-playground-state";
+
+/*
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import { CircleHelp } from "lucide-react";
+*/
 
 export function Instructions() {
   const [isFocused, setIsFocused] = useState<boolean>(false);
@@ -21,6 +26,7 @@ export function Instructions() {
         isFocused ? "ring-1" : "ring-0"
       } h-[200px] overflow-y-auto`}
     >
+      {/*
       <div className="flex justify-between items-center mb-2">
         <div className="flex items-center">
           <div className="text-xs font-semibold uppercase mr-1 tracking-widest">
@@ -50,6 +56,8 @@ export function Instructions() {
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
       />
+      */}
+
     </div>
   );
 }

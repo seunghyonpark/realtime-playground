@@ -1,8 +1,10 @@
 "use client";
 
 import { CodeViewer } from "@/components/code-viewer";
-import { PresetSave } from "@/components/preset-save";
-import { PresetSelector } from "@/components/preset-selector";
+
+//import { PresetSave } from "@/components/preset-save";
+//import { PresetSelector } from "@/components/preset-selector";
+
 import { PresetShare } from "@/components/preset-share";
 
 export function Header() {
@@ -14,17 +16,25 @@ export function Header() {
             <div>
               <h2 className="text-lg font-semibold">Famnote Playground</h2>
               <p className="text-sm text-gray-500">
-                Try OpenAI&apos;s new Realtime API right from your browser.
+                Try OpenAI&apos;s new Realtime API.
               </p>
             </div>
           </div>
         </div>
         <div className="flex flex-row items-center justify-between sm:justify-end space-x-2 mt-2 lg:mt-0">
           <div className="flex flex-row items-center space-x-2">
+            
+            {/*}
             <PresetSelector />
+
             <PresetSave />
+            */}
+
+
             <PresetShare />
+
             <CodeViewer />
+
           </div>
         </div>
       </div>

@@ -19,11 +19,11 @@ import "@livekit/components-styles";
 export const metadata: Metadata = {
   title: "Famnote Playground",
   description:
-    "Try OpenAI's new Realtime API right from your browser.",
+    "Try OpenAI's new Realtime API.",
   openGraph: {
     title: "Famnote Playground",
     description:
-      "Try OpenAI's new Realtime API right from your browser.",
+      "Try OpenAI's new Realtime API.",
     type: "website",
     url: "https://unove.space/",
     images: [

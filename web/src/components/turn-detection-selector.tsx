@@ -1,6 +1,8 @@
 "use client";
 
 import * as React from "react";
+
+/*
 import {
   HoverCard,
   HoverCardContent,
@@ -21,10 +23,13 @@ import {
   FormItem,
   FormLabel,
 } from "@/components/ui/form";
-import { ConfigurationFormFieldProps } from "@/components/configuration-form";
+
 import { VadThresholdSelector } from "./vad-threshold-selector";
 import { VadPrefixPaddingSelector } from "./vad-prefix-padding-selector";
 import { VadSilenceDurationSelector } from "./vad-silence-duration-selector";
+*/
+
+import { ConfigurationFormFieldProps } from "@/components/configuration-form";
 
 export function TurnDetectionSelector({
   form,
@@ -34,6 +39,7 @@ export function TurnDetectionSelector({
 
   return (
     <div>
+      {/*
       <FormField
         control={form.control}
         name="turnDetection"
@@ -83,6 +89,7 @@ export function TurnDetectionSelector({
           <VadSilenceDurationSelector form={form} />
         </div>
       )}
+      */}
     </div>
   );
 }

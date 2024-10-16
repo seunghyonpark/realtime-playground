@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
+
 import { Instructions } from "@/components/instructions";
+
 import { SessionControls } from "@/components/session-controls";
 import { ConnectButton } from "./connect-button";
 import { ConnectionState } from "livekit-client";
@@ -121,17 +123,21 @@ export function Chat() {
         onToggleEdit={toggleInstructionsEdit}
       />
       
-
+      
       <div className="flex flex-col flex-grow items-center lg:justify-between mt-12 lg:mt-0">
+        
         <div className="w-full h-full flex flex-col">
           <div className="flex items-center justify-center w-full">
             <div className="lg:hidden w-full">
               {isChatRunning && !isEditingInstructions ? (
                 renderVisualizer()
               ) : (
+
                 <Instructions />
+
               )}
             </div>
+            
             <div className="hidden lg:block w-full">
               <Instructions />
             </div>
@@ -148,6 +154,7 @@ export function Chat() {
         </div>
       </div>
       
+
     </div>
   );
 }

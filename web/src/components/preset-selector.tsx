@@ -115,6 +115,7 @@ export function PresetSelector(props: PopoverProps) {
   return (
     <>
       <Popover open={open} onOpenChange={setOpen} {...props}>
+        
         <PopoverTrigger asChild>
           <Button
             variant="outline"
@@ -137,6 +138,7 @@ export function PresetSelector(props: PopoverProps) {
             <CaretSortIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
           </Button>
         </PopoverTrigger>
+
         <PopoverContent className="w-[300px] p-0">
           <Command>
             <CommandInput placeholder="Search…" />
