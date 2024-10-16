@@ -11,7 +11,9 @@ import {
   useVoiceAssistant,
   BarVisualizer,
 } from "@livekit/components-react";
+
 import { ChatControls } from "@/components/chat-controls";
+
 import { useAgent } from "@/hooks/use-agent";
 import { useConnection } from "@/hooks/use-connection";
 import { toast } from "@/hooks/use-toast";
@@ -111,11 +113,15 @@ export function Chat() {
 
   return (
     <div className="flex flex-col h-full overflow-hidden p-2 lg:p-4">
+      
+      
       <ChatControls
         showEditButton={isChatRunning}
         isEditingInstructions={isEditingInstructions}
         onToggleEdit={toggleInstructionsEdit}
       />
+      
+
       <div className="flex flex-col flex-grow items-center lg:justify-between mt-12 lg:mt-0">
         <div className="w-full h-full flex flex-col">
           <div className="flex items-center justify-center w-full">
@@ -141,6 +147,7 @@ export function Chat() {
           {renderConnectionControl()}
         </div>
       </div>
+      
     </div>
   );
 }

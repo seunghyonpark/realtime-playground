@@ -17,22 +17,22 @@ const publicSans = Public_Sans({
 import "@livekit/components-styles";
 
 export const metadata: Metadata = {
-  title: "Realtime Playground",
+  title: "Famnote Playground",
   description:
-    "Try OpenAI's new Realtime API right from your browser. Built on LiveKit Agents.",
+    "Try OpenAI's new Realtime API right from your browser.",
   openGraph: {
-    title: "Realtime Playground",
+    title: "Famnote Playground",
     description:
-      "Try OpenAI's new Realtime API right from your browser. Built on LiveKit Agents.",
+      "Try OpenAI's new Realtime API right from your browser.",
     type: "website",
-    url: "https://playground.livekit.io/",
+    url: "https://unove.space/",
     images: [
       {
-        url: "https://playground.livekit.io/og-image.png",
+        url: "https://vzrcy5vcsuuocnf3.public.blob.vercel-storage.com/dBJny2F-OuN57B10RFAx4EWuR4rBqiVUb7rX6g.png",
         width: 1200,
         height: 675,
         type: "image/png",
-        alt: "Realtime Playground",
+        alt: "Famnote Playground",
       },
     ],
   },

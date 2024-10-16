@@ -1,12 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { Rocket, ArrowUpRight } from "lucide-react";
+
+import {
+  //Rocket,
+  ArrowUpRight
+} from "lucide-react";
+
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
+  
+  //DialogTrigger,
+
 } from "@/components/ui/dialog";
 import { useState } from "react";
 import { usePlaygroundState } from "@/hooks/use-playground-state";
@@ -114,7 +121,10 @@ cli.runApp(new WorkerOptions({ agent: fileURLToPath(import.meta.url), workerType
 
   return (
     <Dialog>
+
+      {/*
       <DialogTrigger asChild>
+
         <Button
           variant="default"
           className="group relative transition-all duration-300 ease-in-out transform hover:scale-105 text-sm font-semibold"
@@ -123,7 +133,10 @@ cli.runApp(new WorkerOptions({ agent: fileURLToPath(import.meta.url), workerType
           <span className="sm:ml-2 hidden sm:block">Build with LiveKit</span>
           <span className="ml-2 sm:hidden">Build</span>
         </Button>
+
       </DialogTrigger>
+      */}
+
       <DialogContent className="sm:max-w-6xl w-[95vw] flex flex-col mx-auto h-[90vh] max-h-[90vh]">
         <DialogHeader>
           <DialogTitle>

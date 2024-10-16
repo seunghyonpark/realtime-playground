@@ -23,7 +23,9 @@ import { Input } from "@/components/ui/input";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { ellipsisMiddle } from "@/lib/utils";
+
+//import { ellipsisMiddle } from "@/lib/utils";
+
 import { AuthBanner } from "./authBanner";
 import { LockKeyhole } from "lucide-react";
 import { ArrowUpRight } from "lucide-react";
@@ -48,6 +50,7 @@ export function Auth() {
 
   return (
     <div>
+      {/*
       {pgState.openaiAPIKey && (
         <div className="text-xs flex gap-2 items-center">
           <span className="font-semibold text-neutral-700">
@@ -66,6 +69,7 @@ export function Auth() {
         onOpenChange={setShowAuthDialog}
         onAuthComplete={() => setShowAuthDialog(false)}
       />
+      */}
     </div>
   );
 }

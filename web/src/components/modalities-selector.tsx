@@ -25,10 +25,13 @@ import {
 } from "@/components/ui/hover-card";
 import { modalities } from "@/data/modalities";
 
+
+
 export function ModalitiesSelector({
   form,
   ...props
 }: ConfigurationFormFieldProps) {
+
   return (
     <FormField
       control={form.control}

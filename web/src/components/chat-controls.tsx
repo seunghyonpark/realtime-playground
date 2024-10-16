@@ -16,6 +16,8 @@ export function ChatControls({
 }: ChatControlsProps) {
   return (
     <div className="absolute top-2 left-2 right-2 flex justify-between">
+      
+      
       <div className="flex gap-2">
         <ConfigurationFormDrawer>
           <Button variant="outline" size="icon" className="lg:hidden">
@@ -23,6 +25,8 @@ export function ChatControls({
           </Button>
         </ConfigurationFormDrawer>
       </div>
+      
+
       <div className="flex gap-2">
         {showEditButton && (
           <Button variant="outline" size="icon" onClick={onToggleEdit}>

@@ -8,6 +8,8 @@ import { MaxOutputTokensSelector } from "./max-output-tokens-selector";
 import { ConfigurationFormFieldProps } from "./configuration-form";
 import { ModelSelector } from "./model-selector";
 import { TranscriptionSelector } from "./transcription-selector";
+
+
 export function SessionConfig({ form }: ConfigurationFormFieldProps) {
   return (
     <div className="space-y-2">

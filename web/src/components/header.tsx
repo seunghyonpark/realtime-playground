@@ -12,7 +12,7 @@ export function Header() {
         <div className="flex flex-col mb-2 lg:mb-0">
           <div className="flex flex-row items-center justify-between">
             <div>
-              <h2 className="text-lg font-semibold">Realtime Playground</h2>
+              <h2 className="text-lg font-semibold">Famnote Playground</h2>
               <p className="text-sm text-gray-500">
                 Try OpenAI&apos;s new Realtime API right from your browser.
               </p>
