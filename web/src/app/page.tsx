@@ -16,8 +16,11 @@ export default function Dashboard() {
       </header>
       
       <main className="flex flex-col flex-grow overflow-hidden p-0 md:p-2 md:pt-0 w-full md:mx-auto">
+        
         <Header />
+
         <RoomComponent />
+        
       </main>
 
       {/*
