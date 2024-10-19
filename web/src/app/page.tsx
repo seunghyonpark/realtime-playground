@@ -4,6 +4,9 @@ import { Auth } from "@/components/auth";
 import LK from "@/components/lk";
 //import Heart from "@/assets/heart.svg";
 //import { GitHubLogoIcon } from "@radix-ui/react-icons";
+
+import Image from 'next/image';
+
 export default function Dashboard() {
   return (
     <div className="flex flex-col h-full bg-neutral-100">
@@ -18,6 +21,15 @@ export default function Dashboard() {
       <main className="flex flex-col flex-grow overflow-hidden p-0 md:p-2 md:pt-0 w-full md:mx-auto">
         
         <Header />
+
+        <div className="flex flex-col items-center justify-center m-5 w-full h-14   md:h-52">
+          <Image
+            src="/therapist2.png"
+            alt="AI Therapist"
+            width={80}
+            height={80}
+          />
+        </div>
 
         <RoomComponent />
         

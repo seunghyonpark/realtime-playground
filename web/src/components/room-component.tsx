@@ -6,7 +6,9 @@ import {
   StartAudio,
 } from "@livekit/components-react";
 
-import { ConfigurationForm } from "@/components/configuration-form";
+///import { ConfigurationForm } from "@/components/configuration-form";
+
+
 import { Chat } from "@/components/chat";
 import { Transcript } from "@/components/transcript";
 import { useConnection } from "@/hooks/use-connection";
@@ -28,9 +30,12 @@ export function RoomComponent() {
       style={{ "--lk-bg": "white" } as React.CSSProperties}
     >
       <AgentProvider>
+
+        {/*
         <div className="hidden lg:block h-full overflow-y-auto relative border-r">
           <ConfigurationForm />
         </div>
+        */}
         
         <div className="flex flex-col justify-center w-full max-w-3xl mx-auto">
           <Chat />

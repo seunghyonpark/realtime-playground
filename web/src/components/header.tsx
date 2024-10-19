@@ -5,7 +5,7 @@ import { CodeViewer } from "@/components/code-viewer";
 //import { PresetSave } from "@/components/preset-save";
 //import { PresetSelector } from "@/components/preset-selector";
 
-import { PresetShare } from "@/components/preset-share";
+///import { PresetShare } from "@/components/preset-share";
 
 export function Header() {
   return (
@@ -20,9 +20,11 @@ export function Header() {
               {/*
               <h2 className="text-lg font-semibold">Famnote Playground</h2>
               */}
+              {/*
               <p className="text-sm text-gray-500">
                 Try OpenAI&apos;s new Realtime API.
               </p>
+              */}
             </div>
           </div>
         </div>
@@ -35,8 +37,9 @@ export function Header() {
             <PresetSave />
             */}
 
-
+            {/*
             <PresetShare />
+            */}
 
             <CodeViewer />
 

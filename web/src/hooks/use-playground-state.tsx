@@ -148,6 +148,7 @@ const PlaygroundStateContext = createContext<
 >(undefined);
 
 // Create a custom hook to use the global state
+
 export const usePlaygroundState = (): PlaygroundStateContextProps => {
   const context = useContext(PlaygroundStateContext);
   if (!context) {
@@ -158,10 +159,16 @@ export const usePlaygroundState = (): PlaygroundStateContextProps => {
   return context;
 };
 
+
+
+
+
+
 // Create the provider component
 interface PlaygroundStateProviderProps {
   children: ReactNode;
 }
+
 
 export const PlaygroundStateProvider = ({
   children,
