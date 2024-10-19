@@ -14,7 +14,12 @@ export function Header() {
         <div className="flex flex-col mb-2 lg:mb-0">
           <div className="flex flex-row items-center justify-between">
             <div>
+              <h2 className="text-xl font-semibold">
+                인공지능 동반자에 오신 것을 환영합니다!
+              </h2>
+              {/*
               <h2 className="text-lg font-semibold">Famnote Playground</h2>
+              */}
               <p className="text-sm text-gray-500">
                 Try OpenAI&apos;s new Realtime API.
               </p>
