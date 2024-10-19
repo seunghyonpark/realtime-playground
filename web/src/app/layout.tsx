@@ -31,7 +31,8 @@ export const metadata: Metadata = {
     url: "https://unove.space/",
     images: [
       {
-        url: "https://vzrcy5vcsuuocnf3.public.blob.vercel-storage.com/dBJny2F-OuN57B10RFAx4EWuR4rBqiVUb7rX6g.png",
+        //url: "https://vzrcy5vcsuuocnf3.public.blob.vercel-storage.com/dBJny2F-OuN57B10RFAx4EWuR4rBqiVUb7rX6g.png",
+        url: "https://famnote-live.vercel.app/therapist2.png",
         width: 1200,
         height: 675,
         type: "image/png",
