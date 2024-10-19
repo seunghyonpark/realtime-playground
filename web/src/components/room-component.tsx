@@ -31,9 +31,11 @@ export function RoomComponent() {
         <div className="hidden lg:block h-full overflow-y-auto relative border-r">
           <ConfigurationForm />
         </div>
+        
         <div className="flex flex-col justify-center w-full max-w-3xl mx-auto">
           <Chat />
         </div>
+
         <div className="hidden md:flex flex-col h-full overflow-y-hidden border-l relative">
           <div
             className="flex-grow overflow-y-auto"
@@ -54,8 +56,11 @@ export function RoomComponent() {
             </button>
           </div>
         </div>
+
         <RoomAudioRenderer />
+
         <StartAudio label="Click to allow audio playback" />
+
       </AgentProvider>
     </LiveKitRoom>
   );

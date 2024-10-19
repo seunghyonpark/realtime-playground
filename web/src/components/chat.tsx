@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Instructions } from "@/components/instructions";
 
 import { SessionControls } from "@/components/session-controls";
+
 import { ConnectButton } from "./connect-button";
 import { ConnectionState } from "livekit-client";
 import { motion, AnimatePresence } from "framer-motion";
@@ -127,10 +128,13 @@ export function Chat() {
       <div className="flex flex-col flex-grow items-center lg:justify-between mt-12 lg:mt-0">
         
         <div className="w-full h-full flex flex-col">
+          
           <div className="flex items-center justify-center w-full">
             <div className="lg:hidden w-full">
               {isChatRunning && !isEditingInstructions ? (
+                
                 renderVisualizer()
+
               ) : (
 
                 <Instructions />
@@ -142,16 +146,29 @@ export function Chat() {
               <Instructions />
             </div>
           </div>
+
           <div className="grow h-full flex items-center justify-center">
             <div className="w-full hidden lg:block">
               {isChatRunning && !isEditingInstructions && renderVisualizer()}
             </div>
           </div>
+
         </div>
 
-        <div className="md:mt-2 md:pt-2 md:mb-12 max-md:fixed max-md:bottom-12 max-md:left-1/2 max-md:-translate-x-1/2 max-md:z-50 xl:fixed xl:bottom-12 xl:left-1/2 xl:-translate-x-1/2 xl:z-50">
+        {/*
+        <div
+          className="
+            md:mt-2 md:pt-2 md:mb-12 max-md:fixed max-md:bottom-12 max-md:left-1/2 max-md:-translate-x-1/2 max-md:z-50
+            xl:fixed xl:bottom-12 xl:left-1/2 xl:-translate-x-1/2 xl:z-50"
+        >
           {renderConnectionControl()}
         </div>
+        */}
+
+        <div className="w-full flex items-center justify-center">
+          {renderConnectionControl()}
+        </div>
+
       </div>
       
 

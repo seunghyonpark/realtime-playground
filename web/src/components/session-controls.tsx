@@ -22,9 +22,13 @@ import { Track } from "livekit-client";
 
 import { useConnection } from "@/hooks/use-connection";
 import { useMultibandTrackVolume } from "@/hooks/use-multiband-track-volume";
+
 import { MultibandAudioVisualizer } from "./agent/visualizers/multiband-bar-visualizer";
 
+
+
 export function SessionControls() {
+
   const localParticipant = useLocalParticipant();
   const deviceSelect = useMediaDeviceSelect({ kind: "audioinput" });
   const { disconnect } = useConnection();
@@ -40,9 +44,13 @@ export function SessionControls() {
     setIsMuted(localParticipant.isMicrophoneEnabled === false);
   }, [localParticipant.isMicrophoneEnabled]);
 
+
+
   return (
     <div className="flex flex-row gap-2">
+      
       <div className="flex items-center rounded-md bg-neutral-100 text-secondary-foreground">
+        
         <div className="flex gap-1 pr-4">
           <TrackToggle
             source={Track.Source.Microphone}
@@ -57,6 +65,8 @@ export function SessionControls() {
               <Mic className="h-4 w-4" />
             )}
           </TrackToggle>
+
+          
           <MultibandAudioVisualizer
             state="speaking"
             barWidth={2}
@@ -66,8 +76,24 @@ export function SessionControls() {
             borderRadius={5}
             gap={2}
           />
+          
+
+          {/*
+          <MultibandAudioVisualizer
+            state="speaking"
+            barWidth={2}
+            minBarHeight={20}
+            maxBarHeight={160}
+            frequencies={localMultibandVolume}
+            borderRadius={5}
+            gap={2}
+          />
+          */}
+
         </div>
+
         <DropdownMenu>
+          
           <DropdownMenuTrigger asChild>
             <Button
               variant="secondary"
@@ -76,6 +102,7 @@ export function SessionControls() {
               <ChevronDown className="h-4 w-4 text-secondary-foreground" />
             </Button>
           </DropdownMenuTrigger>
+
           <DropdownMenuContent
             align="end"
             alignOffset={-5}
@@ -114,10 +141,13 @@ export function SessionControls() {
             </DropdownMenuCheckboxItem>
           </DropdownMenuContent>
         </DropdownMenu>
+
       </div>
+
       <Button variant="destructive" onClick={disconnect}>
         Disconnect
       </Button>
+
     </div>
   );
 }

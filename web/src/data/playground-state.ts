@@ -26,18 +26,35 @@ export interface PlaygroundState {
   instructions: string;
 }
 
+
 export const defaultSessionConfig: SessionConfig = {
+  
   model: ModelId.gpt_4o_realtime,
+  
   transcriptionModel: TranscriptionModelId.whisper1,
+  
   turnDetection: TurnDetectionTypeId.server_vad,
+  
   modalities: ModalitiesId.text_and_audio,
-  voice: VoiceId.alloy,
+  
+  //voice: VoiceId.alloy,
+
+  ////voice: VoiceId.cove,
+
+  voice: VoiceId.echo,
+
+
   temperature: 0.8,
+
   maxOutputTokens: null,
+
   vadThreshold: 0.5,
+
   vadSilenceDurationMs: 200,
+
   vadPrefixPaddingMs: 300,
 };
+
 
 // Define the initial state
 /*

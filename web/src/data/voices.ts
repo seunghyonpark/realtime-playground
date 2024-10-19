@@ -2,6 +2,7 @@ export enum VoiceId {
   alloy = "alloy",
   shimmer = "shimmer",
   echo = "echo",
+  //cove = "cove",
 }
 
 export interface Voice {
@@ -22,4 +23,10 @@ export const voices: Voice[] = [
     id: VoiceId.echo,
     name: "Echo",
   },
+  /*
+  {
+    id: VoiceId.cove,
+    name: "Cove",
+  }
+  */
 ];

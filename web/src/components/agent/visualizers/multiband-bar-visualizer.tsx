@@ -58,6 +58,8 @@ export const MultibandAudioVisualizer = ({
     return () => clearTimeout(timeout);
   }, [state, summedFrequencies.length, thinkingDirection, thinkingIndex]);
 
+
+  
   return (
     <div
       className={`flex flex-row items-center`}
